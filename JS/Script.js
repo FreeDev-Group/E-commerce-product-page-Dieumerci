@@ -167,7 +167,7 @@ if (checkoutBtn) {
 }
 
 // ACCESSIBILITY: KEYBOARD NAVIGATION
-
+     
 // Allow thumbnail selection with keyboard
 thumbnails.forEach((thumbnail, index) => {
     thumbnail.addEventListener('keydown', function(e) {
