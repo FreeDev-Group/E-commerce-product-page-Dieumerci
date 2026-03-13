@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers | E-commerce Product Page</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
+    <!-- MAIN CONTENT -->
+    <!-- CART DROPDOWN (ISSUE 8) -->
+    <div class="cart-dropdown" id="cartDropdown" hidden>
+        <h2>Cart</h2>
+        <div class="cart-empty">Your cart is empty.</div>
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="./images/image-product-1-thumbnail.jpg" alt="Product thumbnail">
+                <div class="item-details">
+                    <p class="item-name">Fall Limited Edition Sneakers</p>
+                    <p class="item-price">$125.00 x <span id="cartQuantity">0</span> <strong id="cartTotal">$0.00</strong></p>
+                </div>
+                <button class="delete-btn" aria-label="Remove item">
+                    <img src="./images/icon-delete.svg" alt="Delete">
+                </button>
+            </div>
+        </div>
+        <button class="checkout-btn">Checkout</button>
+    </div>
+
+    <main class="container" id="main-content">
+        <!-- PRODUCT SECTION - ISSUES 4 & 5 --> 
+        <section class="product-section" aria-label="Product details">
+            <!-- PRODUCT IMAGE GALLERY - ISSUE 4 -->
+            <div class="product-gallery">
+                <!-- Main Product Image -->
+                <div class="main-image-wrapper">
+                    <img src="./images/image-product-1.jpg" 
+                         alt="Product image 1" 
+                         class="main-image" 
+                         id="mainImage">
+                </div>
+
+                <!-- Thumbnail Images -->
+                <div class="thumbnails">
+                    <div class="thumbnail active" data-image="./images/image-product-1.jpg" tabindex="0" role="button" aria-label="Product image 1">
+                        <img src="./images/image-product-1-thumbnail.jpg" alt="Product thumbnail 1">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-2.jpg" tabindex="0" role="button" aria-label="Product image 2">
+                        <img src="./images/image-product-2-thumbnail.jpg" alt="Product thumbnail 2">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-3.jpg" tabindex="0" role="button" aria-label="Product image 3">
+                        <img src="./images/image-product-3-thumbnail.jpg" alt="Product thumbnail 3">
+                    </div>
+                    <div class="thumbnail" data-image="./images/image-product-4.jpg" tabindex="0" role="button" aria-label="Product image 4">
+                        <img src="./images/image-product-4-thumbnail.jpg" alt="Product thumbnail 4">
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUCT INFORMATION - ISSUE 5 -->
+            <div class="product-info">
+                <!-- Company Name -->
+                <div class="company-name">SNEAKER COMPANY</div>
+
+                <!-- Product Title -->
+                <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+
+                <!-- Description -->
+                <p class="product-description">
+                    These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.
+                </p>
+
+                <!-- Pricing Section -->
+                <div class="pricing-section">
+                    <div class="pricing-container">
+                        <span class="current-price">$125.00</span>
+                        <span class="discount-badge">50%</span>
+                    </div>
+                    <span class="original-price">$250.00</span>
+                </div>
+
+                <!-- ACTIONS (QUANTITY + ADD TO CART) -->  
+                <div class="product-actions">
+                    <!-- QUANTITY SELECTOR - ISSUE 6 -->
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decreaseBtn" aria-label="Decrease quantity">
+                            <img src="./images/icon-minus.svg" alt="Minus">
+                        </button>
+                        <span class="quantity-display" id="quantityDisplay">0</span>
+                        <button class="quantity-btn" id="increaseBtn" aria-label="Increase quantity">
+                            <img src="./images/icon-plus.svg" alt="Plus">
+                        </button>
+                    </div>
+
+                    <!-- ADD TO CART BUTTON - ISSUE 7 -->
+                    <button class="add-to-cart-btn" id="addToCartBtn">
+                        <img src="./images/icon-cart.svg" alt="Cart">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./JS/Script.js"></script>
+</body>
+</html>
