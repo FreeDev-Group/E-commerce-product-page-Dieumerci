@@ -974,9 +974,7 @@ html {
     filter: brightness(0) invert(1);
 }
 
-/* ================================
-   ISSUE 9: RESPONSIVE DESIGN
-   ================================ */
+/* ISSUE 9: RESPONSIVE DESIGN */
 
 /* Tablet & Medium screens (up to 768px) */
 @media (max-width: 768px) {
