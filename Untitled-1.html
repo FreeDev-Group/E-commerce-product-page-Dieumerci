@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneakers</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+
+    <!-- Menu hamburger (mobile) -->
+    <img src="images/icon-menu.svg" class="menu-icon" id="menu-btn" alt="menu">
+    
+    <!-- Logo -->
+    <div class="logo">
+        <h2>sneakers</h2>
+    </div>
+
+    <!-- Menu navigation -->
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Icônes droite -->
+   <div class="header-icons">
+    <img src="images/icon-cart.svg" class="cart-icon" id="cart-btn" alt="cart">
+    <img src="images/image-avatar.png" class="avatar" id="avatar-btn" alt="avatar">
+</div>
+
+</header>
+
+<!-- SCRIPT POUR LE MENU HAMBURGER -->
+<script>
+let menuBtn = document.getElementById("menu-btn");
+let navbar = document.getElementById("navbar");
+
+menuBtn.onclick = function(){
+    navbar.classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

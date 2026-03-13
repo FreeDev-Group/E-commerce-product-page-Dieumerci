@@ -1,0 +1,164 @@
+/* =====================================
+RESET DE BASE
+===================================== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* =====================================
+BODY
+===================================== */
+body{
+  background-color: hsl(223, 64%, 98%); /* light grayish blue */
+  color: hsl(220, 13%, 13%); /* very dark blue */
+  font-size:16px;
+  line-height:1.5;
+}
+
+/* =====================================
+HEADER PRINCIPAL
+Flex horizontal, alignement vertical, espace entre sections
+===================================== */
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:20px 80px;
+  background-color: hsl(0, 0%, 100%); /* blanc */
+  border-bottom:1px solid hsl(223, 64%, 98%);
+  position:relative; /* pour menu mobile */
+  max-width:1440px;
+  margin:0 auto;
+}
+
+/* ------------------------
+LOGO
+------------------------ */
+.logo h2{
+  font-size:22px;
+  font-weight:700;
+  color:hsl(220, 13%, 13%);
+}
+
+/* ------------------------
+NAVBAR (DESKTOP)
+------------------------ */
+.navbar ul{
+  display:flex;
+  list-style:none;
+  gap:30px;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+  color:hsl(219, 9%, 45%); /* dark grayish blue */
+  font-weight:700;
+  font-size:16px;
+  transition:0.3s;
+}
+
+/* Hover + focus pour accessibilité */
+.navbar ul li a:hover,
+.navbar ul li a:focus{
+  color:hsl(26, 100%, 55%); /* primary orange */
+  outline:none;
+}
+
+/* Focus visible pour WCAG */
+.navbar ul li a:focus-visible {
+  outline: 2px solid hsl(26, 100%, 55%);
+  outline-offset: 2px;
+}
+
+/* ------------------------
+ICONS DROITE
+------------------------ */
+.header-icons{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+.cart-icon{
+  width:22px;
+  cursor:pointer;
+}
+
+.avatar{
+  width:40px;
+  border-radius:50%;
+  cursor:pointer;
+}
+
+/* ------------------------
+MENU HAMBURGER
+Caché sur desktop
+------------------------ */
+.menu-icon{
+  width:25px;
+  cursor:pointer;
+  display:none;
+}
+
+/* =====================================
+RESPONSIVE MOBILE
+Écran max 768px
+===================================== */
+@media (max-width:768px){
+
+  .header{
+    padding:20px;
+  }
+
+  /* Affiche hamburger */
+  .menu-icon{
+    display:block;
+  }
+
+  /* Navbar mobile (cachée initialement) */
+  .navbar{
+    position:absolute;
+    top:70px;
+    left:-100%; /* hors écran */
+    width:100%;
+    background-color: hsl(0,0%,100%); /* blanc */
+    transition:0.3s;
+    z-index:1000;
+    padding:20px 0;
+  }
+
+  /* Menu en colonne */
+  .navbar ul{
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+    padding-left:30px;
+  }
+
+  /* Quand le hamburger est cliqué */
+  .navbar.active{
+    left:0;
+  }
+}
+
+/* =====================================
+BOUTONS (exemple Add-to-cart)
+===================================== */
+button, .btn-add-cart{
+  background-color: hsl(26, 100%, 55%);
+  color:hsl(0,0%,100%);
+  border:none;
+  border-radius:10px;
+  padding:12px 20px;
+  font-size:16px;
+  font-weight:700;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover, .btn-add-cart:hover{
+  background-color: hsl(25, 100%, 45%);
+}
