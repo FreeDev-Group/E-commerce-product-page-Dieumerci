@@ -1,6 +1,7 @@
 # Frontend Mentor - E-commerce product page solution
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the E-commerce product page challenge on Frontend Mentor.  
+This project helped me practice building a responsive product page with interactive UI components such as an image gallery, cart functionality, and a lightbox viewer.
 
 ## Table of contents
 
@@ -10,9 +11,10 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
-  - [My process](#my-process)
-    - [Built with](#built-with)
+- [My process](#my-process)
+  - [Built with](#built-with)
   - [Author](#author)
+  - [What I learned](#what-i-learned)
 
 ## Overview
 
@@ -36,17 +38,37 @@ Users should be able to:
 - Solution URL: [GitHub Repository](https://github.com/Mugisho-dev-metasploit/-E-commerce-Product-Page-challeger-Frontend-Mentor)
 - Live Site URL: [Live Demo](https://mugisho-dev-metasploit.github.io/-E-commerce-Product-Page-challeger-Frontend-Mentor/)
 
-## My process
+# My process
 
-### Built with
+## Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
+- Semantic HTML5
+- CSS3
 - Flexbox
-- Mobile-first workflow
+- CSS Grid
+- Mobile-first responsive design
 - Vanilla JavaScript
+- Accessibility best practices
+
 
 ## Author
 
 - Name - mugisho ntashara
 - GitHub - [@Mugisho-dev-metasploit](https://github.com/Mugisho-dev-metasploit)
+
+## What I learned
+
+During this project, I improved my skills in responsive design and interactive UI development.  
+I implemented a dynamic product image gallery with thumbnails and a lightbox viewer for desktop users.
+
+I also practiced writing clean JavaScript logic for cart management and quantity selection.
+
+Example of the image gallery interaction:
+
+```javascript
+thumbnails.forEach(thumbnail => {
+  thumbnail.addEventListener("click", function() {
+    const newImageSrc = this.getAttribute("data-image");
+    mainImage.src = newImageSrc;
+  });
+});
