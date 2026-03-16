@@ -74,7 +74,6 @@ thumbnails.forEach(thumbnail => {
     mainImage.src = newImageSrc;
   });
 });
-```
 
 ## Author
 
