@@ -1,6 +1,7 @@
 # Frontend Mentor - E-commerce product page solution
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the E-commerce product page challenge on Frontend Mentor.  
+This project helped me practice building a responsive product page with interactive UI components such as an image gallery, cart functionality, and a lightbox viewer.
 
 ## Table of contents
 
@@ -76,3 +77,5 @@ thumbnails.forEach(thumbnail => {
 
 - Name - mugisho ntashara
 - GitHub - [@Mugisho-dev-metasploit](https://github.com/Mugisho-dev-metasploit)
+
+
